@@ -75,7 +75,7 @@ class Home extends Component {
     }
 
     const whiteText = {
-      color: "white",
+      // color: "white",
       backgroundColor: "lightgray"
     }
 
@@ -84,9 +84,9 @@ class Home extends Component {
       <div style={allElementsStyle}>
           <header style={headerStyle}>
             <p style={headerTextStyle}>
-              <h6>You made it! Welcome to my page!</h6>
-              <h4>Viktorija Gjorgjievska</h4>
-              <h5>Full Stack Web Developer</h5>
+              <strong>You made it! Welcome to my page!</strong><br/>
+              <strong>Viktorija Gjorgjievska</strong><br/>
+              <strong>Full Stack Web Developer</strong><br/>
             </p>
           </header>
 
@@ -104,7 +104,7 @@ class Home extends Component {
               </p>
             </div>
 
-            <p style={whiteText}>
+            <div style={whiteText}>
               <strong>Projects</strong>
 
             <ul>
@@ -115,13 +115,13 @@ class Home extends Component {
               <li><a href="https://blooming-temple-73019.herokuapp.com/categories">Kaizen-  connecting tutors with locals.</a></li>
               <li>See more on <a href="https://github.com/viktorija6420">GitHub</a>!</li>
             </ul>
-            </p>
+            </div>
 
-            <p style={divStyle}>
+            <div style={divStyle}>
               <strong>Skills</strong>
 
               <ul>
-                <li><h5>Technologies:</h5> HTML,
+                <li><strong>Technologies:</strong> HTML,
                 CSS, Ruby(OOP), Rails,
                 JavaScript, ES6, React,
                 PostgreSQL, SQLite,
@@ -130,14 +130,15 @@ class Home extends Component {
                 XML, Git, GitHub, Bash,
                 Heroku, Trello,
                 Dreamweaver</li>
-                <li><h5>Spoken Languages:</h5>English, Italian, Spanish,
+                <li><strong>Spoken Languages:</strong>English, Italian, Spanish,
                 Portuguese, Macedonian</li>
               </ul>
-            </p>
+            </div>
 
-            <p style={whiteText}><strong>Work Experience</strong>
-
-             <h3>FREELANCE WEB DEVELOPER</h3>
+            <div style={whiteText}><strong>Work Experience</strong>
+            <br/>
+            <br/>
+             <strong>FREELANCE WEB DEVELOPER</strong>
              <p> Toronto, Canada |  January 2018 - present</p>
 
                <ul>
@@ -153,8 +154,8 @@ class Home extends Component {
                  <li>Deployment on Heroku.</li>
                </ul>
 
-             <h3>MENTOR</h3>
-             <h4> Canada Learning Code</h4>
+             <strong>MENTOR</strong>
+             <strong> Canada Learning Code</strong>
              <p>Toronto, Canada |  April 2018 - present</p>
 
              <ul>
@@ -163,17 +164,23 @@ class Home extends Component {
               <li>Mentored Ladies Learning Code to build a Chrome extension. (JavaScript for beginners)</li>
              </ul>
 
-            </p>
+            </div>
 
             <p style={divStyle}><strong>Education</strong>
-
-             <h4>BACHELOR OF ARTS IN TRANSLATION AND INTERPRETING</h4>
-             <h5> Saints Cyril and Methodius University of Skopje</h5>
-             <p> Confirmed as <strong>recognised university in Canada</strong> by Comparative Education Service at the University of Toronto School of Continuing Studies</p>
-             <p> Skopje, Macedonia |  2009 - 2013</p>
+             <br/>
+             <br/>
+             <strong>BACHELOR OF ARTS IN TRANSLATION AND INTERPRETING</strong>
+             <br/>
+             <strong> Saints Cyril and Methodius University of Skopje</strong>
+             <br/>
+             <br/>
+             <span> Skopje, Macedonia |  2009 - 2013</span>
+             <br/>
+             <br/>
+             <span> Confirmed as <strong>recognised university in Canada</strong> by Comparative Education Service at the University of Toronto School of Continuing Studies</span>
              </p>
 
-            <p >
+            <div>
               <strong>Interests</strong>
               <ul>
                 <li>Technology</li>
@@ -181,12 +188,12 @@ class Home extends Component {
                 <li>Hiking</li>
                 <li>Spoken Languages</li>
               </ul>
-            </p>
+            </div>
 
           </div>
 
             <p style={footerStyle}>
-             <h4>Let&apos;s connect!</h4>
+             <strong>Let&apos;s connect!</strong>
              <a href="https://www.linkedin.com/in/viktorija-gjorgjievska/">LinkedIn</a>
              <br/>
              <a href="https://github.com/viktorija6420">GitHub</a>
