@@ -17,13 +17,14 @@ class Home extends Component {
     }
 
     const bodyStyle = {
-      backgroundSize: "cover"
+
     }
 
     const profileStyle = {
       // background: "rgba(0, 0, 0, 0.8)",
       backgroundColor:" #FFDE80",
-      overflow: "hidden"
+      overflow: "hidden",
+      zIndex: "300"
     }
 
     const divStyle = {
@@ -31,17 +32,25 @@ class Home extends Component {
     }
 
     const pictureStyle = {
+      position: "fixed",
+      zIndex: "-300",
+      marginRight: "200px",
+      paddingLeft: "0px",
+      width: "100%",
+      height: "100%",
+      top: "0%",
+      left: "0%"
     }
 
     const headerStyle = {
-      textAlign: "center",
-      backgroundImage: `url(require(../assets/beverage-coffee-computer-877695.jpg)) no repeat fixed 50%`
+      textAlign: "center"
     }
 
-    const headingStyle = {
-      zIndex: "10",
-      marginTop: "70px",
-      color: "black",
+    const headerTextStyle = {
+      zIndex: "200",
+      marginTop: "0px",
+      paddingTop: "0px",
+      color: "white",
       fontSize: "32px",
       textTransform: "uppercase"
     };
@@ -62,20 +71,28 @@ class Home extends Component {
 
     const footerStyle = {
       textAlign: "center",
-            backgroundColor: "#FFDE80"
+      backgroundColor: "#FFDE80"
     }
 
+    const whiteText = {
+      color: "white",
+      backgroundColor: "lightgray"
+    }
 
     return (
 
       <div style={allElementsStyle}>
           <header style={headerStyle}>
-            <h3>You made it! Welcome to my page!</h3>
-            <h1 style={headingStyle}>Viktorija Gjorgjievska</h1>
-            <h2>Full Stack Web Developer</h2>
+            <p style={headerTextStyle}>
+              <h6>You made it! Welcome to my page!</h6>
+              <h4>Viktorija Gjorgjievska</h4>
+              <h5>Full Stack Web Developer</h5>
+            </p>
           </header>
 
           <div style={bodyStyle}>
+          <Image style={pictureStyle} src={require('../assets/business.jpg')} alt="table with computer"  />
+
             <div style={profileStyle}>
               <Image style={profilePictureStyle} src={require('../assets/resume-picture.jpg')} alt="resume-picture"  />
 
@@ -87,9 +104,8 @@ class Home extends Component {
               </p>
             </div>
 
-            <p style={divStyle}>
+            <p style={whiteText}>
               <strong>Projects</strong>
-            </p>
 
             <ul>
               <li><a href="https://easybreezymove.herokuapp.com/">Mover App</a></li>
@@ -99,26 +115,27 @@ class Home extends Component {
               <li><a href="https://blooming-temple-73019.herokuapp.com/categories">Kaizen-  connecting tutors with locals.</a></li>
               <li>See more on <a href="https://github.com/viktorija6420">GitHub</a>!</li>
             </ul>
+            </p>
 
             <p style={divStyle}>
               <strong>Skills</strong>
 
-            <ul>
-              <li><h5>Technologies:</h5> HTML,
-              CSS, Ruby(OOP), Rails,
-              JavaScript, ES6, React,
-              PostgreSQL, SQLite,
-              Bootstrap, APIs, AJAX,
-              jQUERY, Git, GitHub,
-              XML, Git, GitHub, Bash,
-              Heroku, Trello,
-              Dreamweaver</li>
-              <li><h5>Spoken Languages:</h5>English, Italian, Spanish,
-              Portuguese, Macedonian</li>
-            </ul>
+              <ul>
+                <li><h5>Technologies:</h5> HTML,
+                CSS, Ruby(OOP), Rails,
+                JavaScript, ES6, React,
+                PostgreSQL, SQLite,
+                Bootstrap, APIs, AJAX,
+                jQUERY, Git, GitHub,
+                XML, Git, GitHub, Bash,
+                Heroku, Trello,
+                Dreamweaver</li>
+                <li><h5>Spoken Languages:</h5>English, Italian, Spanish,
+                Portuguese, Macedonian</li>
+              </ul>
             </p>
 
-            <p style={divStyle}><strong>Work Experience</strong></p>
+            <p style={whiteText}><strong>Work Experience</strong>
 
              <h3>FREELANCE WEB DEVELOPER</h3>
              <p> Toronto, Canada |  January 2018 - present</p>
@@ -146,6 +163,8 @@ class Home extends Component {
               <li>Mentored Ladies Learning Code to build a Chrome extension. (JavaScript for beginners)</li>
              </ul>
 
+            </p>
+
             <p style={divStyle}><strong>Education</strong>
 
              <h4>BACHELOR OF ARTS IN TRANSLATION AND INTERPRETING</h4>
@@ -154,16 +173,15 @@ class Home extends Component {
              <p> Skopje, Macedonia |  2009 - 2013</p>
              </p>
 
-            <p style={divStyle}>
-              <strong>Interests</strong></p>
-
-
+            <p >
+              <strong>Interests</strong>
               <ul>
                 <li>Technology</li>
                 <li>Learning</li>
                 <li>Hiking</li>
                 <li>Spoken Languages</li>
               </ul>
+            </p>
 
           </div>
 
