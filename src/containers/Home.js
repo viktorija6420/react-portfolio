@@ -60,6 +60,10 @@ class Home extends Component {
       float: "right",
     }
 
+    const footerStyle = {
+      textAlign: "center",
+            backgroundColor: "#FFDE80"
+    }
 
 
     return (
@@ -88,41 +92,70 @@ class Home extends Component {
             </p>
 
             <ul>
-              <li><a href="https://github.com/viktorija6420">GitHub Account</a></li>
               <li><a href="https://easybreezymove.herokuapp.com/">Mover App</a></li>
               <li><a href="https://ser-estar.herokuapp.com/index.html">Quiz for Spanish Practice</a></li>
               <li><a href="https://www.languagecognition.ca/">Website for Language Tutoring</a></li>
               <li><a href="http://vip-travel-shop.com.preview.services/#">Travel Agency Static Page with Anchor Links</a></li>
               <li><a href="https://blooming-temple-73019.herokuapp.com/categories">Kaizen-  connecting tutors with locals.</a></li>
+              <li>See more on <a href="https://github.com/viktorija6420">GitHub</a>!</li>
             </ul>
 
             <p style={divStyle}>
-              <strong>Technologies</strong>
-
+              <strong>Skills</strong>
 
             <ul>
-              <li>Languages</li>
-              <li>Libraries</li>
-              <li>Frameworks</li>
-              <li>Databases</li>
-              <li>Design</li>
+              <li><h5>Technologies:</h5> HTML,
+              CSS, Ruby(OOP), Rails,
+              JavaScript, ES6, React,
+              PostgreSQL, SQLite,
+              Bootstrap, APIs, AJAX,
+              jQUERY, Git, GitHub,
+              XML, Git, GitHub, Bash,
+              Heroku, Trello,
+              Dreamweaver</li>
+              <li><h5>Spoken Languages:</h5>English, Italian, Spanish,
+              Portuguese, Macedonian</li>
             </ul>
             </p>
 
-            <p style={divStyle}><strong>Education</strong></p>
+            <p style={divStyle}><strong>Work Experience</strong></p>
 
-             <h3>FULL STACK WEB DEVELOPMENT IMMERSIVE</h3>
-             <h4> BITMAKER </h4>
-             <p> Toronto, Canada |  2017</p>
+             <h3>FREELANCE WEB DEVELOPER</h3>
+             <p> Toronto, Canada |  January 2018 - present</p>
 
-             <h3>BACHELOR OF ARTS IN TRANSLATION AND INTERPRETING</h3>
-             <h4> Saints Cyril and Methodius University of Skopje</h4>
+               <ul>
+                 <li>Developed several applications in a pair, a team of three and five programmers using Ruby on Rails and JavaScript.</li>
+                 <li>Teamwork on GitHub. (branching, merging, pulling, pushing, stashing...)</li>
+                 <li>Data modelling for a clear idea of the project and table relationships.</li>
+                 <li>Creating MVP and strategy for quality assurance.</li>
+                 <li>Making reusable code with MVC architectural pattern.</li>
+                 <li>Problem-solve individually, in a team or by pair programming while coding and debugging.(DOM, byebug, pry)</li>
+                 <li>Manipulating the database.(PSQL, SQL)</li>
+                 <li>Adding APIs (Google Maps API, Pokeapi the RESTful Pokemon API)</li>
+                 <li>Finding good front-end solutions (HTML5, CSS3, Bootstrap, JavaScript, AJAX calls, jQuery).</li>
+                 <li>Deployment on Heroku.</li>
+               </ul>
+
+             <h3>MENTOR</h3>
+             <h4> Canada Learning Code</h4>
+             <p>Toronto, Canada |  April 2018 - present</p>
+
+             <ul>
+              <li>Mentored Girls Learning Code to build a website using HTML and CSS.</li>
+              <li>Mentored Teens Learning Code to build a resume using HTML and CSS.</li>
+              <li>Mentored Ladies Learning Code to build a Chrome extension. (JavaScript for beginners)</li>
+             </ul>
+
+            <p style={divStyle}><strong>Education</strong>
+
+             <h4>BACHELOR OF ARTS IN TRANSLATION AND INTERPRETING</h4>
+             <h5> Saints Cyril and Methodius University of Skopje</h5>
              <p> Confirmed as <strong>recognised university in Canada</strong> by Comparative Education Service at the University of Toronto School of Continuing Studies</p>
              <p> Skopje, Macedonia |  2009 - 2013</p>
-
+             </p>
 
             <p style={divStyle}>
-              <strong>Interests</strong>
+              <strong>Interests</strong></p>
 
 
               <ul>
@@ -131,11 +164,14 @@ class Home extends Component {
                 <li>Hiking</li>
                 <li>Spoken Languages</li>
               </ul>
-            </p>
+
           </div>
-          <p style={divStyle}><strong>My life before coding</strong></p>
-            <p>Translation jobs</p>
-            <p>Let&apos;s connect: <a href="https://www.linkedin.com/in/viktorija-gjorgjievska/">LinkedIn</a>
+
+            <p style={footerStyle}>
+             <h4>Let&apos;s connect!</h4>
+             <a href="https://www.linkedin.com/in/viktorija-gjorgjievska/">LinkedIn</a>
+             <br/>
+             <a href="https://github.com/viktorija6420">GitHub</a>
             <br/>Email: viktorija.gjorgjievska@gmail.com
           </p>
       </div>
