@@ -63,7 +63,9 @@ class Home extends Component {
       marginTop: "3%",
       marginRight: "3%",
       marginBottom: "3%",
-      width: "30%"
+      width: "30%",
+      maxWidth: "200px",
+      maxHeight: "250px"
     };
 
     const summaryStyle = {
@@ -77,8 +79,10 @@ class Home extends Component {
       padding: "10px"
     }
 
+
     const listStyle = {
-      listStyleType: "none"
+      listStyleType: "none",
+      marginLeft: "-30px"
 
     }
 
@@ -123,7 +127,7 @@ class Home extends Component {
             <div className = "paragraph" style={grayAreas}>
               <strong>Skills</strong>
 
-              <ul>
+              <ul style={listStyle}>
                 <li><strong>Technologies:</strong> HTML,
                 CSS, Ruby(OOP), Rails,
                 JavaScript, ES6, React,
