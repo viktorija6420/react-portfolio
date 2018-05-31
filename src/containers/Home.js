@@ -9,11 +9,14 @@ const Image = styled.img`
 class Home extends Component {
   static propTypes = {};
   render() {
+
     const allElementsStyle = {
 
     }
+
     const htmlStyle = {
-      boxSizing: "border-box"
+      boxSizing: "border-box",
+
     }
 
     const bodyStyle = {
@@ -21,14 +24,16 @@ class Home extends Component {
     }
 
     const profileStyle = {
-      // background: "rgba(0, 0, 0, 0.8)",
       backgroundColor:" #FFDE80",
       overflow: "hidden",
-      zIndex: "300"
+      zIndex: "300",
+      padding: "10px"
     }
 
     const divStyle = {
-      backgroundColor: "#FFDE80"
+      backgroundColor: "#FFDE80",
+      margin: "0",
+      padding: "10px"
     }
 
     const pictureStyle = {
@@ -48,11 +53,8 @@ class Home extends Component {
 
     const headerTextStyle = {
       zIndex: "200",
-      marginTop: "0px",
-      paddingTop: "0px",
       color: "white",
-      fontSize: "32px",
-      textTransform: "uppercase"
+      fontSize: "32px"
     };
 
     const profilePictureStyle = {
@@ -66,17 +68,27 @@ class Home extends Component {
 
     const summaryStyle = {
       width: "67%",
-      float: "right",
+      float: "right"
     }
+
+    const grayAreas = {
+      backgroundColor: "lightgray",
+      marginTop: "-20px",
+      padding: "10px"
+    }
+
+    const listStyle = {
+      listStyleType: "none"
+
+    }
+
+    const lastDivStyle = {
+      padding:"10px"
+    };
 
     const footerStyle = {
       textAlign: "center",
       backgroundColor: "#FFDE80"
-    }
-
-    const whiteText = {
-      // color: "white",
-      backgroundColor: "lightgray"
     }
 
     return (
@@ -84,8 +96,11 @@ class Home extends Component {
       <div style={allElementsStyle}>
           <header style={headerStyle}>
             <p style={headerTextStyle}>
-              <strong>You made it! Welcome to my page!</strong><br/>
-              <strong>Viktorija Gjorgjievska</strong><br/>
+              <br/>
+              You made it! Welcome to my page!<br/>
+              <br/>
+              <strong>VIKTORIJA GJORGJIEVSKA</strong><br/>
+              <br/>
               <strong>Full Stack Web Developer</strong><br/>
             </p>
           </header>
@@ -102,22 +117,10 @@ class Home extends Component {
               <br/>
                 I started Web Development as a journey to expand the limits of my intellectual capabilities and to explore my visual conceptualisation. I want to believe that human potential is limitless as long as there is enough focus put into its development. I see myself as creative and passionate for challenges. I want to be the bridge between art and logic in the world of business.
               </p>
+
             </div>
 
-            <div style={whiteText}>
-              <strong>Projects</strong>
-
-            <ul>
-              <li><a href="https://easybreezymove.herokuapp.com/">Mover App</a></li>
-              <li><a href="https://ser-estar.herokuapp.com/index.html">Quiz for Spanish Practice</a></li>
-              <li><a href="https://www.languagecognition.ca/">Website for Language Tutoring</a></li>
-              <li><a href="http://vip-travel-shop.com.preview.services/#">Travel Agency Static Page with Anchor Links</a></li>
-              <li><a href="https://blooming-temple-73019.herokuapp.com/categories">Kaizen-  connecting tutors with locals.</a></li>
-              <li>See more on <a href="https://github.com/viktorija6420">GitHub</a>!</li>
-            </ul>
-            </div>
-
-            <div style={divStyle}>
+            <div className = "paragraph" style={grayAreas}>
               <strong>Skills</strong>
 
               <ul>
@@ -130,12 +133,27 @@ class Home extends Component {
                 XML, Git, GitHub, Bash,
                 Heroku, Trello,
                 Dreamweaver</li>
+                <br/>
                 <li><strong>Spoken Languages:</strong>English, Italian, Spanish,
                 Portuguese, Macedonian</li>
               </ul>
             </div>
+            <div className = "paragraph"style={divStyle}>
+              <strong>Projects</strong>
 
-            <div style={whiteText}><strong>Work Experience</strong>
+            <ul style={listStyle}>
+              <li><a href="https://easybreezymove.herokuapp.com/">Mover App</a></li>
+              <li><a href="https://ser-estar.herokuapp.com/index.html">Quiz for Spanish Practice</a></li>
+              <li><a href="https://www.languagecognition.ca/">Website for Language Tutoring</a></li>
+              <li><a href="http://vip-travel-shop.com.preview.services/#">Travel Agency Static Page with Anchor Links</a></li>
+              <li><a href="https://blooming-temple-73019.herokuapp.com/categories">Kaizen-  connecting tutors with locals.</a></li>
+              <li>See more on <a href="https://github.com/viktorija6420">GitHub</a>!</li>
+            </ul>
+            </div>
+
+
+
+            <div className = "paragraph" style={grayAreas}><strong>Work Experience</strong>
             <br/>
             <br/>
              <strong>FREELANCE WEB DEVELOPER</strong>
@@ -180,7 +198,7 @@ class Home extends Component {
              <span> Confirmed as <strong>recognised university in Canada</strong> by Comparative Education Service at the University of Toronto School of Continuing Studies</span>
              </p>
 
-            <div>
+            <div style={lastDivStyle}>
               <strong>Interests</strong>
               <ul>
                 <li>Technology</li>
@@ -194,6 +212,7 @@ class Home extends Component {
 
             <p style={footerStyle}>
              <strong>Let&apos;s connect!</strong>
+             <br/>
              <a href="https://www.linkedin.com/in/viktorija-gjorgjievska/">LinkedIn</a>
              <br/>
              <a href="https://github.com/viktorija6420">GitHub</a>
