@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import Container from '../themes/grid/Container';
+import  Header from './Header.js';
+import Footer from './Footer.js';
 // import './App.css';
 const Image = styled.img`
 
@@ -47,16 +49,6 @@ class Home extends Component {
       left: "0%"
     }
 
-    const headerStyle = {
-      textAlign: "center"
-    }
-
-    const headerTextStyle = {
-      zIndex: "200",
-      color: "white",
-      fontSize: "32px"
-    };
-
     const profilePictureStyle = {
       borderRadius: "50%",
       float: "left",
@@ -98,16 +90,7 @@ class Home extends Component {
     return (
 
       <div style={allElementsStyle}>
-          <header style={headerStyle}>
-            <p style={headerTextStyle}>
-              <br/>
-              You made it! Welcome to my page!<br/>
-              <br/>
-              <strong>VIKTORIJA GJORGJIEVSKA</strong><br/>
-              <br/>
-              <strong>Full Stack Web Developer</strong><br/>
-            </p>
-          </header>
+       <Header />
 
           <div style={bodyStyle}>
           <Image style={pictureStyle} src={require('../assets/business.jpg')} alt="table with computer"  />
@@ -214,14 +197,7 @@ class Home extends Component {
 
           </div>
 
-            <p style={footerStyle}>
-             <strong>Let&apos;s connect!</strong>
-             <br/>
-             <a href="https://www.linkedin.com/in/viktorija-gjorgjievska/">LinkedIn</a>
-             <br/>
-             <a href="https://github.com/viktorija6420">GitHub</a>
-            <br/>Email: viktorija.gjorgjievska@gmail.com
-          </p>
+          <Footer />
       </div>
     );
   }
